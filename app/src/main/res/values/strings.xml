@@ -1,0 +1,5 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">生活帮</string>
+    <string name="timer_format"><xliff:g id="format">%02d</xliff:g>:<xliff:g id="format">%02d</xliff:g></string>
+    <string name="default_record_name">未命名录音</string>
+</resources>

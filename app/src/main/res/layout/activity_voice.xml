@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_note_title"
+            style="@style/AppTitleStyle"
+            android:background="#3B3B3B"
+            android:textColor="#fff"
+            android:text="欢声笑语"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_voice"
+            android:layout_width="60.0px"
+            android:layout_height="60.0px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30.0px">
+
+            <ImageView
+                android:layout_width="25.0px"
+                android:layout_height="45.0px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/return_iv"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_voice"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg_voice"
+        android:layout_width="match_parent"
+        android:background="#3B3B3B"
+        android:layout_height="150.0px"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_voice_0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_voice_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="创建录音"
+            android:textColor="@color/rb_voice_text_selector"
+            android:textSize="46.0px" />
+
+        <RadioButton
+            android:id="@+id/rb_voice_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_voice_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="录音列表"
+            android:textColor="@color/rb_voice_text_selector"
+            android:textSize="46.0px" />
+    </RadioGroup>
+
+</LinearLayout>

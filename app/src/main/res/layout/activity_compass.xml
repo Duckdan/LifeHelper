@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_mainbg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_compass_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_comapss_title"
+            style="@style/AppTitleStyle"
+            android:background="#333"
+            android:text="东南西北"
+            android:textColor="#fff"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_compass"
+            android:layout_width="60.0px"
+            android:layout_height="60.0px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30.0px">
+
+            <ImageView
+                android:layout_width="25.0px"
+                android:layout_height="45.0px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/return_iv"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_orientation"
+        android:layout_width="600.0px"
+        android:layout_height="100.0px"
+        android:layout_below="@id/rl_compass_first"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50.0px"
+        android:background="@drawable/compass_angle_shape_bg"
+        android:gravity="center"
+        android:text="南"
+        android:textColor="#fff"/>
+
+    <FrameLayout
+        android:layout_width="720.0px"
+        android:layout_height="720.0px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_compassbg">
+
+        <ImageView
+            android:id="@+id/iv_pointer"
+            android:layout_width="720.0px"
+            android:layout_height="720.0px"
+            android:background="@drawable/bg_compasspointer"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120.0px"
+        android:layout_alignParentBottom="true"
+        android:background="#000">
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="北"
+            android:textColor="#fff"
+            android:textSize="48.0px"
+            />
+    </FrameLayout>
+</RelativeLayout>

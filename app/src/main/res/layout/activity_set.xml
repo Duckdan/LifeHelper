@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_set_title"
+            style="@style/AppTitleStyle"
+            android:text="系统设置" />
+
+        <RelativeLayout
+            android:id="@+id/rl_set"
+            android:layout_width="60.0px"
+            android:layout_height="60.0px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30.0px">
+
+            <ImageView
+                android:layout_width="25.0px"
+                android:layout_height="45.0px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/return_iv" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_add_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="120.0px"
+        android:background="@drawable/item_set_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="30.0px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="是否添加密码锁"
+            android:textSize="48.0px" />
+
+        <CheckBox
+            android:id="@+id/cb_add_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30.0px"
+            android:checked="true"
+            android:clickable="false" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0px"
+        android:background="#aaaaaa" />
+
+    <LinearLayout
+        android:id="@+id/ll_reset_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="120.0px"
+        android:background="@drawable/item_set_selector"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="30.0px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重置密码"
+            android:textSize="48.0px" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0px"
+        android:background="#aaaaaa" />
+
+    <RelativeLayout
+        android:id="@+id/rl_voice_high_quality"
+        android:layout_width="match_parent"
+        android:layout_height="120.0px"
+        android:background="@drawable/item_set_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="30.0px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="使用高质量录音"
+            android:textSize="48.0px" />
+
+        <CheckBox
+            android:id="@+id/cb_set_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30.0px"
+            android:clickable="false" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0px"
+        android:background="#aaaaaa" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_clear_all"
+        android:layout_width="match_parent"
+        android:layout_height="120.0px"
+        android:background="@drawable/item_set_selector"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="30.0px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除所有数据"
+
+            android:textSize="48.0px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0px"
+        android:background="#aaaaaa" />
+</LinearLayout>

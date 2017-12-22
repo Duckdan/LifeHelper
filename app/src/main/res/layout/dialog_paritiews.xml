@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500.0px"
+    android:background="@drawable/parities_dialog_shape"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_original"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="添加至源货币"
+        android:textSize="48.0px"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0px"
+        android:background="#aaa"
+        />
+
+    <Button
+        android:id="@+id/bt_target"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="添加至目标货币"
+        android:textSize="48.0px"
+        />
+
+</LinearLayout>

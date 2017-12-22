@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_parities_title"
+            style="@style/AppTitleStyle"
+            android:text="汇率兑换"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_parities"
+            android:layout_width="60.0px"
+            android:layout_height="60.0px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30.0px">
+
+            <ImageView
+                android:layout_width="25.0px"
+                android:layout_height="45.0px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/return_iv"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="50.0px">
+
+        <ImageView
+            android:layout_width="160.0px"
+            android:layout_height="160.0px"
+            android:background="@drawable/paritiesmin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="50.0px"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="48.0px"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_show_usa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="1美元=6.8754人民币"
+                android:textSize="48.0px"/>
+
+            <TextView
+                android:id="@+id/tv_show_rmb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0px"
+                android:singleLine="true"
+                android:text="1人民币=0.1454美元"
+                android:textSize="48.0px"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50.0px"
+        android:layout_marginRight="50.0px"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0px"
+            android:layout_weight="1"
+            android:background="@drawable/parities_et_tv_shape"
+            android:gravity="center"
+            android:inputType="number"
+            android:singleLine="true"
+            android:hint="数量"
+            android:textSize="48.0px"/>
+
+        <TextView
+            android:id="@+id/tv_original"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0px"
+            android:layout_weight="1"
+            android:background="@drawable/parities_et_tv_shape"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="源货币"
+            android:textSize="48.0px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0px"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="兑"
+            android:textSize="48.0px"/>
+
+        <TextView
+            android:id="@+id/tv_target"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0px"
+            android:layout_weight="1"
+            android:background="@drawable/parities_et_tv_shape"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="目标货币"
+            android:textSize="48.0px"/>
+
+        <Button
+            android:id="@+id/bt_change"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="兑换"
+            android:textSize="48.0px"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_country"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:cacheColorHint="#fff"
+        android:listSelector="@android:color/transparent"/>
+
+</LinearLayout>

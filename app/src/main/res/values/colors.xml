@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ee00AFF0</color>
+
+    <color name="note_proguard_eye">#D2E3C7</color>
+    <color name="note_book_incense">#F1F1F1</color>
+    <color name="note_night">#CECECE</color>
+    <color name="note_parchment">#E4DDC3</color>
+
+    <color name="rl_diary_normal">#ffffff</color>
+    <color name="rv_diary_normal">#aaffffff</color>
+    <color name="rl_diary_pressed">#aaaaaa</color>
+
+    <color name="rb_voice_normal">#3b3b3b</color>
+    <color name="rb_voice_pressed">#000000</color>
+    <color name="item_set_normal">#ffffff</color>
+    <color name="item_set_pressed">#f1f1f1</color>
+    <color name="modify_hint_color">#a7a7a7</color>
+</resources>

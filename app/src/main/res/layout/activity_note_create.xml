@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aaeeeeee">
+
+        <RelativeLayout
+            android:id="@+id/rl_note_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_note_title"
+                style="@style/AppTitleStyle"
+                android:text="创建便签" />
+
+            <RelativeLayout
+                android:id="@+id/rl_note"
+                android:layout_width="60.0px"
+                android:layout_height="60.0px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30.0px">
+
+                <ImageView
+                    android:layout_width="25.0px"
+                    android:layout_height="45.0px"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/return_iv" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_note_save"
+                android:layout_width="120.0px"
+                android:layout_height="120.0px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/note_save" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_note_first"
+            android:textSize="48.0px"
+            android:lineSpacingExtra="16.0px"
+            android:hint="请填写便签内容"
+            android:singleLine="false"
+            android:scrollHorizontally="false"
+            android:inputType="textShortMessage|textMultiLine"
+            android:padding="60.0px"
+            android:background="@color/note_book_incense"
+            android:gravity="top" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/cl_note_create"
+        android:layout_width="match_parent"
+        android:layout_height="320.0px"
+        android:layout_gravity="bottom"
+        >
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/note_fab_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="32.0px"
+            android:src="@android:drawable/ic_dialog_map"
+            app:backgroundTint="#00AFF0"
+            app:borderWidth="4.0px"
+            app:fabSize="normal"
+            app:rippleColor="#aaaaaa" />
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

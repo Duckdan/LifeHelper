@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PhoneTvStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10.0px</item>
+        <item name="android:textSize">48.0px</item>
+    </style>
+
+    <style name="AppDayInfoTv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <!--<item name="android:starStyle">?android:ratingBarStyleSmall</item>-->
+    <style name="AppDayInfoRb">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:gravity">center</item>
+
+        <item name="android:numStars">5</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <style name="AppTitleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#00AFF0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">35.0px</item>
+        <item name="android:textSize">60.0px</item>
+    </style>
+
+    <style name="dialog_anim">
+        <item name="android:windowEnterAnimation">@anim/anim_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_exit</item>
+    </style>
+    <!-- 对话框 -->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/android:transparent</item>
+        <item name="android:windowAnimationStyle">@style/dialog_anim</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="activity_animation">
+        <item name="@android:windowEnterAnimation">@anim/to_new_in</item>
+        <item name="@android:windowExitAnimation">@anim/to_new_out</item>
+    </style>
+
+    <style name="AppSplashTheme" parent="Theme.AppCompat">
+
+        <item name="android:windowAnimationStyle">@style/activity_animation</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/splash</item>//@null黑屏 @drawable/icon放一张启动图片
+        <item name="android:windowNoTitle">true</item>//启动界面是否显示应用名称 true不
+    </style>
+</resources>

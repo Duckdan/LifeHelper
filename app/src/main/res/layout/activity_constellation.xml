@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/starbg"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_constellation_title"
+            style="@style/AppTitleStyle"
+            android:background="#2D3C60"
+            android:text="今日运势"
+            android:textColor="#fff"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_constellation"
+            android:layout_width="60.0px"
+            android:layout_height="60.0px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30.0px">
+
+            <ImageView
+                android:layout_width="25.0px"
+                android:layout_height="45.0px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/return_iv"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_constellation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50.0px"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:verticalSpacing="50.0px"
+        >
+    </GridView>
+</LinearLayout>

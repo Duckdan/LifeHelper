@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66ffffff">
+
+    <LinearLayout
+        android:id="@+id/activity_diary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_diary_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_diary_title"
+                style="@style/AppTitleStyle"
+                android:text="抒发心声" />
+
+            <RelativeLayout
+                android:id="@+id/rl_diary"
+                android:layout_width="60.0px"
+                android:layout_height="60.0px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30.0px">
+
+                <ImageView
+                    android:layout_width="25.0px"
+                    android:layout_height="45.0px"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/return_iv" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_diary_show_mode"
+                android:layout_width="60.0px"
+                android:layout_height="60.0px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20.0px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/diary_set" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_diary_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180.0px"
+        android:layout_gravity="bottom|center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_add_diary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/item_rl_diary_selector"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120.0px"
+                android:layout_height="120.0px"
+                android:gravity="center"
+                android:text="新建"
+                android:textSize="48.0px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2.0px"
+            android:background="#000" />
+    </FrameLayout>
+</FrameLayout>

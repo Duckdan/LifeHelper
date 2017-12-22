@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aaeeeeee">
+
+        <RelativeLayout
+            android:id="@+id/rl_diary_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_diary_title"
+                style="@style/AppTitleStyle"
+                android:text="创建日记" />
+
+            <RelativeLayout
+                android:id="@+id/rl_diary"
+                android:layout_width="60.0px"
+                android:layout_height="60.0px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30.0px">
+
+                <ImageView
+                    android:layout_width="25.0px"
+                    android:layout_height="45.0px"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/return_iv" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_diary_save"
+                android:layout_width="120.0px"
+                android:layout_height="120.0px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/note_save" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_et_diary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_diary_first"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_diary_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#aaffffff"
+                android:gravity="center_vertical"
+                android:hint="请填写日记标题"
+                android:inputType="textShortMessage"
+                android:paddingBottom="30.0px"
+                android:paddingLeft="60.0px"
+                android:paddingTop="30.0px"
+                android:scrollHorizontally="false"
+                android:singleLine="true"
+                android:lines="1"
+                android:textSize="48.0px" />
+
+            <EditText
+                android:id="@+id/et_diary_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#aaffffff"
+                android:gravity="top"
+                android:hint="请填写日记内容"
+                android:inputType="textShortMessage|textMultiLine"
+                android:lineSpacingExtra="16.0px"
+                android:padding="60.0px"
+                android:scrollHorizontally="false"
+                android:singleLine="false"
+                android:textSize="48.0px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tv_diary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_diary_first"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_diary_title_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#aaffffff"
+                android:paddingBottom="30.0px"
+                android:paddingLeft="60.0px"
+                android:paddingTop="30.0px"
+                android:textSize="48.0px"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_diary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_diary_first"
+                android:background="#aaffffff"
+                android:scrollbars="vertical"
+                android:gravity="top"
+                android:lineSpacingExtra="16.0px"
+                android:padding="60.0px"
+                android:singleLine="false"
+                android:textSize="48.0px"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

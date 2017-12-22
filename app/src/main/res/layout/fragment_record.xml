@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#2B2B2B"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/time_calculator"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="90.0px"></com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tape_bottom" />
+
+            <com.study.yang.lifehelper.defineview.WheelImageView
+                android:id="@+id/wheel_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="140px"
+                android:layout_marginTop="230px"
+                android:src="@drawable/wheel_left" />
+
+            <com.study.yang.lifehelper.defineview.WheelImageView
+                android:id="@+id/wheel_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="140.0px"
+                android:layout_marginTop="230.0px"
+                android:src="@drawable/wheel_right" />
+
+            <com.study.yang.lifehelper.defineview.WheelImageView
+                android:id="@+id/wheel_small_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginBottom="100.0px"
+                android:layout_marginLeft="100.0px"
+                android:src="@drawable/wheel_small_left" />
+
+            <com.study.yang.lifehelper.defineview.WheelImageView
+                android:id="@+id/wheel_small_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="100.0px"
+                android:layout_marginRight="100.0px"
+                android:src="@drawable/wheel_small_right" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tape_top" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="185.0px"
+                android:layout_marginTop="200.0px"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <com.study.yang.lifehelper.defineview.RecordNameEditText
+                    android:id="@+id/file_name"
+                    android:layout_width="800.0px"
+                    android:layout_height="70.0px"
+                    android:background="#00000000"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoFrameLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/vumeter_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal"></com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80.0px"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bt_start_record"
+                        android:layout_width="220.0px"
+                        android:layout_height="220.0px"
+                        android:background="@drawable/voice_record_start_shape"
+                        android:gravity="center"
+                        android:padding="10.0px"
+                        android:text="开始录音"
+                        android:textSize="48.0px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bt_stop_record"
+                        android:layout_width="220.0px"
+                        android:layout_height="220.0px"
+                        android:background="@drawable/voice_record_stop_shape"
+                        android:gravity="center"
+                        android:padding="10.0px"
+                        android:text="停止录音"
+                        android:textSize="48.0px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

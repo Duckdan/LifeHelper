@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150.0px"
+    android:orientation="horizontal"
+    android:paddingRight="-152.0px">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="150.0px"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_voice_list"
+            android:layout_width="150.0px"
+            android:layout_height="150.0px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0px"
+            android:background="@drawable/voice_list" />
+
+        <TextView
+            android:id="@+id/tv_recorder_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/iv_voice_list"
+            android:text=" 未知录音"
+            android:textSize="48.0px" />
+
+        <TextView
+            android:id="@+id/tv_recorder_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40.0px"
+            android:text="00:00"
+            android:textSize="48.0px" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="150.0px"
+        android:layout_height="150.0px"
+        android:background="#f00"
+        android:scaleType="center"
+        android:gravity="center"
+        android:src="@android:drawable/ic_menu_delete"
+        />
+</LinearLayout>
